@@ -21,14 +21,16 @@ build:
     - javac -version
     - source /usr/local/rvm/scripts/rvm
     - ruby --version
-    - gcloud version
-    - aws --version
-    - packer --version
+    - gcloud version #211.0.0
+    - aws --version #1.15.73
+    - eb --version #3.14.3
+    - packer --version #1.2.2 
     - jq --version
-    - kubectl version --client
+    - kubectl version --client #1.11.0
+    - az --version #3.0.0
     - docker --version
     - docker pull shippabledocker/sample_node_pvt:ecr
-    
+ 
 integrations:
     
   hub:
